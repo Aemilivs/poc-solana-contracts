@@ -1,6 +1,8 @@
+use solana_program::{entrypoint::ProgramResult, pubkey::Pubkey, account_info::AccountInfo, msg};
+use solana_program::entrypoint;
+
 // declare and export the program's entrypoint
 entrypoint!(process_instruction);
-
 // program entrypoint's implementation
 pub fn process_instruction(
     program_id: &Pubkey,
